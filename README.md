@@ -1,6 +1,6 @@
 # Vanilla UJS
 
-It is implementation of Rails [jQuery UJS][jq-ujs] in pure JavaScript.
+It is implementation of Rails [jQuery UJS](jq-ujs) in pure JavaScript.
 No extra dependencies.
 
 ## Installation using the @airship/vanilla-ujs package

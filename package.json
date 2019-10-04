@@ -1,14 +1,25 @@
 {
-  "name": "vanilla-ujs",
-  "version": "1.3.0",
+  "name": "@airship/vanilla-ujs",
+  "version": "1.0.0",
   "description": "Rails UJS in VanillaJS",
-  "main": "lib/assets/javascripts/vanilla-ujs.js",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
-    "build": "npm install && grunt dist",
+    "build": "rollup -c",
     "test": "grunt test",
     "webtest": "grunt webtest"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {},
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
     "body-parser": "~1.18.2",
     "chai": "^4.1.2",
     "express": "~4.16.2",
@@ -20,21 +31,31 @@
     "grunt-express": "*",
     "grunt-mocha": "~1.0",
     "grunt-parallel": "^0.5.1",
+    "husky": "^3.0.8",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1",
+    "rollup": "^1.23.0",
     "sinon": "^4.1.2"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hauleth/vanilla-ujs.git"
+    "url": "git://github.com/teamairship/vanilla-ujs.git"
   },
   "keywords": [
     "ujs",
     "rails",
     "vanilla"
   ],
-  "author": "Łukasz Niemier",
+  "author": "Seth Alexander",
+  "contributors": [
+    "Seth Alexander <seth@teamairship.com>"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hauleth/vanilla-ujs/issues"
+    "url": "https://github.com/teamairship/vanilla-ujs/issues"
   },
-  "homepage": "https://github.com/hauleth/vanilla-ujs"
+  "homepage": "https://github.com/teamairship/vanilla-ujs#readme",
+  "directories": {
+    "lib": "lib"
+  }
 }

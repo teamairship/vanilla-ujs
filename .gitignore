@@ -1,12 +1,1 @@
-/.bundle/
-/.yardoc
-/Gemfile.lock
-/_yardoc/
-/coverage/
-/doc/
-/pkg/
-/spec/reports/
-/tmp/
-/node_modules
-/vendor/bundle
-/*.gem
+node_modules

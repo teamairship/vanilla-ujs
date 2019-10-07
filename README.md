@@ -1,11 +1,26 @@
 # Vanilla UJS
 
-It is implementation of Rails [jQuery UJS](jq-ujs) in pure JavaScript.
-No extra dependencies.
+This is an implementation of Rails [jQuery UJS](jq-ujs) in pure JavaScript.
+No extra dependencies. This will fix issues found when trying to utilize some Rails helpers that don't work in a webpacker project. e.g.
 
-## Installation using the @airship/vanilla-ujs package
+```erb
+<%= link_to('Logout', destroy_user_session_path, method: :delete) %>
+```
 
-// TODO
+Does not send the request with a method of `DELETE`.
+
+## Install
+
+```sh
+yarn add @airship/vanilla-ujs
+```
+
+## Usage
+
+```js
+// application.js
+import "@airship/vanilla-ujs";
+```
 
 ## Contribute
 
@@ -16,11 +31,7 @@ No extra dependencies.
 
 2.  Install dependencies
 
-        $ npm install
-
-3.  Run tests
-
-        $ grunt test
+        $ yarn install
 
 ## License
 

@@ -22,15 +22,7 @@ module.exports = function(grunt) {
         footer: "}).call(void(0), window, document);"
       },
       dist: {
-        src: [
-          "lib/polyfills.js",
-          "lib/liteajax.js",
-          "lib/confirm.js",
-          "lib/method.js",
-          "lib/disable.js",
-          "lib/csrf.js",
-          "lib/form.js"
-        ],
+        src: ["lib/index.js"],
         dest: "lib/vanilla-ujs.js"
       }
     },

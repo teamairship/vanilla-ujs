@@ -9,7 +9,7 @@
     "lib"
   ],
   "scripts": {
-    "build": "rollup -c",
+    "build": "rm -rf ./lib && rollup -c",
     "test": "grunt test",
     "webtest": "grunt webtest"
   },

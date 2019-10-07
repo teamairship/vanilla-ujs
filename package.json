@@ -1,8 +1,10 @@
 {
   "name": "@airship/vanilla-ujs",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha",
   "description": "Rails UJS in VanillaJS",
   "main": "lib/index.js",
+  "module": "lib/index.esm.js",
+  "browser": "lib/index.umd.js",
   "files": [
     "lib"
   ],
@@ -18,8 +20,6 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.6.2",
-    "@babel/preset-env": "^7.6.2",
     "body-parser": "~1.18.2",
     "chai": "^4.1.2",
     "express": "~4.16.2",
@@ -35,6 +35,7 @@
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.1",
     "rollup": "^1.23.0",
+    "rollup-plugin-terser": "^5.1.2",
     "sinon": "^4.1.2"
   },
   "repository": {
